@@ -19,14 +19,18 @@ public class Main {
     // sets the amount of array
     int[] num = new int[10];
     
+    // using for loop it will store 10 different (num.length) variables
     for(int i = 0; i < num.length; i++){
       num[i] = input.nextInt();
     }
 
+    // asks the user to input a number to find
     System.out.println("Please enter a number to find");
 
+    // gets the number from the user
     int sameNum = input.nextInt();
 
+    // using the for loop it will figure out where the number is and its i + 1 because the stored variable start counting from 0
     for(int i = 0; i < num.length; i++){
       if(num[i] == sameNum){
         System.out.println(sameNum + " is located at index " + (i + 1));
